@@ -18,3 +18,26 @@ elif age >=18:
 	print("You are old enough to get a driving license")
 else:
 	print("You can get a learner's license in {} years".format(18 - age))
+
+
+#Slightly  more complex if loop
+
+print("\n\nSlightly  more complex if loop \n")
+
+guess = int(input("Please enter a number between 1 and 10: "))
+
+if guess < 5:
+	guess = int(input("Please try a lower number: "))
+	if guess == 5:
+		print("You guessed correct")
+	else:
+		print("You guessed incorrect")
+elif guess >5:
+	guess = int(input("Please try a lower number: "))
+	if guess == 5:
+		print("You guessed correct")
+	else:
+		print("You guessed incorrect")
+else:
+	print("You got it right the first time")
+
