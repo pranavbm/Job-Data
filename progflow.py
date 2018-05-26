@@ -27,17 +27,36 @@ print("\n\nSlightly  more complex if loop \n")
 guess = int(input("Please enter a number between 1 and 10: "))
 
 if guess < 5:
-	guess = int(input("Please try a lower number: "))
+	guess = int(input("Please try a higher number: "))
 	if guess == 5:
-		print("You guessed correct")
+		print("You guessed correct!")
 	else:
 		print("You guessed incorrect")
-elif guess >5:
+elif guess > 5:
 	guess = int(input("Please try a lower number: "))
 	if guess == 5:
-		print("You guessed correct")
+		print("You guessed correct!")
 	else:
 		print("You guessed incorrect")
 else:
-	print("You got it right the first time")
+	print("You got it right the first time!!")
 
+#Same loop written in a better way
+
+
+print("\n\nSame if loop written in a better way\n")
+
+guess = int(input("Please enter a number between 1 and 10: "))
+
+if guess != 5:
+	if guess < 5:
+		print("Please try a higher number")
+	else:
+		print("Please try a lower number")
+	guess = int(input())
+	if guess == 5:
+		print("You guessed correct!")
+	else:
+		print("you guessed incorrect")
+else:
+	print("You got it right first time!!")
